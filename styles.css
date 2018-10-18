@@ -9,8 +9,11 @@ body {
   width: 960px;
   margin: 0 auto;
   padding: 0;
-  display: flex;
-  justify-content: space-evenly;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
 }
 
 header {
@@ -18,15 +21,19 @@ header {
   width: 100%;
   top: 0%;
   left: 0%;
-  position: fixed;
 }
 
 .title {
   align-content: center;
 }
 
-.nav {
+nav {
   align-content: center;
-  position: sticky;
   align-content: horizontal;
+  padding: 13px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 960px;
+  margin: 0 auto;
 }
