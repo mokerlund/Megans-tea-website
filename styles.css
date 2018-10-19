@@ -4,6 +4,7 @@ header {
   width: 100%;
   top: 0%;
   left: 0%;
+  background: rgba(25, 151, 0, 0.35);
 }
 
 nav {
@@ -13,14 +14,13 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 100%;
+  max-width: 960px;
   width: auto;
   margin: 0 auto;
-  background: rgba(76, 175, 80, 0.3);
 }
 
 a {
-  color: whitesmoke;
+  color: #3d3330;
   text-decoration: none;
   font-size: 17px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -45,10 +45,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
 }
 
-.announcement-section p {
-  padding: 0%;
+.announcement{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container {
