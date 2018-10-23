@@ -61,8 +61,15 @@ body {
   background: rgba(25, 151, 0, 0.35);
 }
 
+.announcement h3 {
+  text-align: center;
+}
+
 .announcement p {
   padding: 10px;
+  max-width: 250px;
+  width: auto;
+  justify-content: space-evenly;
 }
 
 .container {
