@@ -52,7 +52,7 @@ body {
   margin: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%;                                                                             
   transform: translate(-50%, -50%);
   border-style: solid;
   border-color: #3d3330;
@@ -76,12 +76,28 @@ body {
   display: flex;
 }
 
-
 .container {
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   padding: 0;
 }
 
+.content {
+  width: 960px;
+  margin: 0;
+  border-style: solid;
+  border-color: #3d3330;
+  border-width: 2px;
+  border-radius: 1px;
+  background: rgba(25, 151, 0, 0.35);
+}
 
-
+.parallax-image {
+  width: 100%;
+  height: 83vh;
+  background: url("./images/announcement-image.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
