@@ -72,6 +72,11 @@ body {
   justify-content: space-evenly;
 }
 
+.popular-products {
+  display: flex;
+}
+
+
 .container {
   max-width: 960px;
   margin: 0 auto;
