@@ -2,7 +2,8 @@ let productSlide = document.querySelectorAll(".product");
 let sliderLength = productSlide.length;
 let arrowRight = document.querySelector("#pp-right-arrow");
 let arrowLeft = document.querySelector("#pp-left-arrow");
-let current = 0;
+let start = 0;
+let end = 3;
 
 // Clear all images
 function reset() {
@@ -11,25 +12,29 @@ function reset() {
   }
 }
 
+function changeDisplay(item) {
+  return (item.style.display = "inline-block");
+}
+
 // Init Slider (Showing 3)
 function startCarousel() {
   reset();
-  for (let i = 0; i < 3; i++) {
-    productSlide[i].style.display = "inline-block";
+  for (let i = 0; i < end; i++) {
+    changeDisplay(productSlide[i]);
   }
 }
 
 // Show Next
 function slideRight() {
   reset();
-  productSlide[current + 1].style.display = "block";
+  changeDisplay(productSlide[current + 1]);
   current++;
 }
 
 // Show Prev
 function slideLeft() {
   reset();
-  productSlide[current - 1].style.display = "block";
+  changeDisplay(productSlide[current - 1]);
   current--;
 }
 
