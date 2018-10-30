@@ -115,14 +115,14 @@ body {
 }
 
 #pp-left-arrow {
-  border-width: 30px 40px 30px 0;
+  border-width: 10px 15px 10px 0;
   border-color: transparent #000 transparent transparent;
   left: 0;
   margin-left: 30px;
 }
 
 #pp-right-arrow {
-  border-width: 30px 0 30px 40px;
+  border-width: 10px 0 10px 15px;
   border-color: transparent transparent transparent #000;
   right: 0;
   margin-right: 30px;
