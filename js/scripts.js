@@ -11,10 +11,12 @@ function reset() {
   }
 }
 
-// Init Slider
+// Init Slider (Showing 3)
 function startCarousel() {
   reset();
-  productSlide[0].style.display = "block";
+  for (let i = 0; i < 3; i++) {
+    productSlide[i].style.display = "inline-block";
+  }
 }
 
 // Show Next
