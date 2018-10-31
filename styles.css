@@ -97,6 +97,7 @@ body {
 .product {
   text-align: center;
   margin: 10px 25px;
+  display: none;
 }
 
 .popular-products-image {
