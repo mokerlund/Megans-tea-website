@@ -120,6 +120,16 @@ body {
   border-style: solid;
 }
 
+#pp-left-arrow.end {
+  border-color: transparent #999 transparent transparent;
+  cursor: initial;
+}
+
+#pp-right-arrow.end {
+  border-color: transparent transparent transparent #999;
+  cursor: initial;
+}
+
 #pp-left-arrow {
   border-width: 10px 15px 10px 0;
   border-color: transparent #000 transparent transparent;
