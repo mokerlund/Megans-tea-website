@@ -2,7 +2,7 @@ let productSlide = document.querySelectorAll(".product");
 let sliderLength = productSlide.length;
 let arrowRight = document.querySelector("#pp-right-arrow");
 let arrowLeft = document.querySelector("#pp-left-arrow");
-let slides = 1;
+let slides = 0;
 
 // Clear all images
 function reset() {
@@ -18,38 +18,19 @@ function changeDisplay(item) {
 // Init Slider (Showing 3)
 function startCarousel() {
   reset();
-  for (let i = 0; i < 3; i++) {
-    changeDisplay(productSlide[i]);
-  }
-  arrowLeft.addEventListener("click", () => {
-    if (slides == 0) {
-      slides = sliderLength;
-    }
-    slideLeft();
-  });
-
-  arrowRight.addEventListener("click", () => {
-    if (slides == sliderLength - 1) {
-      slides = -1;
-    }
-    slideRight();
-  });
+  changeDisplay(productSlide[0]);
 }
 
 // Show Next
 function slideRight() {
   reset();
   changeDisplay(productSlide[slides + 1]);
-  changeDisplay(productSlide[slides]);
-  changeDisplay(productSlide[slides - 1]);
   slides++;
 }
 
 // Show Prev
 function slideLeft() {
   reset();
-  changeDisplay(productSlide[slides + 1]);
-  changeDisplay(productSlide[slides]);
   changeDisplay(productSlide[slides - 1]);
   slides--;
 }
